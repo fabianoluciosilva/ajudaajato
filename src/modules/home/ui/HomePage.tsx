@@ -17,51 +17,50 @@ export const HomePage = () => {
     <div className="min-h-screen bg-linear-to-br from-slate-50 via-white to-blue-50">
       <Navbar />
 
-      {/* Primeira dobra — foco em conversão */}
+      {/* Primeira dobra — Foco em urgência e fim dos "favores" */}
       <HomeHeroSection />
 
-      {/* Benefícios e diferenciais — alinhados às campanhas */}
+      {/* Benefícios — 100% Remoto, Rápido e Sem Visitas */}
       <BenefitsSection />
 
-      {/* Gatilho de risco — sem exagero, focado em B2B */}
+      {/* Gatilho de risco — O custo de ficar parado e depender dos outros */}
       <AlertSection />
 
-      {/* Agitação de Dor e Comparativo - O salvador da pátria */}
+      {/* Comparativo — Esperar o "sobrinho" vs. Chamar a Ajuda Ajato */}
       <ComparisonSection />
 
       {/* Prova social */}
       <TestimonialsSection />
 
-      {/* Garantia — redução de fricção */}
+      {/* Garantia — Foco no atendimento avulso (Risco Zero) */}
       <section
         id="guarantee-section"
         className="py-20 bg-white scroll-mt-24"
         style={{ contentVisibility: "auto", containIntrinsicSize: "400px" }}
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-linear-to-br from-green-50 to-emerald-50 rounded-3xl p-12 border-4 border-green-500 shadow-2xl">
-            <Shield className="w-20 h-20 text-green-600 mx-auto mb-6" />
+          <div className="bg-linear-to-br from-blue-50 to-sky-50 rounded-3xl p-12 border-4 border-blue-500 shadow-2xl">
+            <Shield className="w-20 h-20 text-blue-600 mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Garantia Blindada de Satisfação
+              Risco Zero: Problema Resolvido ou Seu Dinheiro de Volta
             </h2>
-            <h3 className="text-2xl font-bold text-green-600 mb-4">
-              30 Dias Sem Risco
+            <h3 className="text-2xl font-bold text-blue-600 mb-4">
+              Garantia de Solução Imediata
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Se você não estiver <span className="font-bold">100% satisfeito</span> com nossos
-              serviços em até 30 dias, devolvemos seu investimento.{" "}
+              Se nossos especialistas não conseguirem resolver o seu problema remotamente, <span className="font-bold">devolvemos 100% do valor pago</span> imediatamente.{" "}
               <span className="font-bold">
-                Sem perguntas. Sem burocracia.
+                Sem letras miúdas. Sem enrolação.
               </span>
             </p>
             <p className="text-xl font-semibold text-gray-800 mb-8">
-              Essa é nossa confiança na qualidade do nosso trabalho.
+              Você só paga pelo que realmente funciona. Essa é a nossa promessa.
             </p>
 
             {/* BOTÃO FIXO DO WHATSAPP USANDO O COMPONENTE */}
             <WhatsAppButton 
-              buttonText="Falar com um Especialista Agora"
-              message="Olá! Vi a garantia de 30 dias no site e gostaria de entender como a Simples Solução pode assumir a TI da minha empresa."
+              buttonText="Solicitar Atendimento Seguro Agora"
+              message="Olá! Preciso de suporte urgente e vi a garantia de Risco Zero no site. Como funciona?"
             />
 
           </div>
