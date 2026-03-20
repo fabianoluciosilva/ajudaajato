@@ -1,6 +1,5 @@
 "use client";
 
-// Estendendo a interface Window para que o TypeScript reconheça o dataLayer do GTM
 declare global {
   interface Window {
     dataLayer: Record<string, any>[];
@@ -16,15 +15,15 @@ interface Props {
 
 export const WhatsAppButton = ({
   id_ads,
-  message = "Olá! Acessei o site da Simples Solução e gostaria de falar com um especialista sobre a TI da minha empresa.",
+  message = "Olá! Acessei o site da Ajuda Ajato e preciso de suporte técnico remoto.",
   buttonText = "Falar com um Especialista Agora",
   className = "",
 }: Props) => {
-  const waNumber = "552140421350";
+  // Número atualizado para a Ajuda Ajato
+  const waNumber = "5521940421350";
   const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
 
   const handleConversion = () => {
-    // Agora o TypeScript não vai mais reclamar do dataLayer
     if (typeof window !== "undefined" && window.dataLayer) {
       window.dataLayer.push({
         event: "conversion_whatsapp",
