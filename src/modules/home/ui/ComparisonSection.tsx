@@ -1,31 +1,26 @@
 import { CheckCircle2, XCircle } from "lucide-react";
-import { WhatsAppButton } from "./WhatsAppButton"; // Importando o componente
+import { WhatsAppButton } from "./WhatsAppButton";
 
 const comparisonData = [
   {
-    title: "1. Tempo de Resposta",
-    bad: "Você abre um chamado e reza. Demoram horas ou dias para responder, enquanto sua empresa perde dinheiro.",
-    good: "Resposta em até 5 minutos. O seu problema começa a ser resolvido na hora, com SLA formalizado.",
+    title: "Tempo de Espera",
+    bad: "Você precisa se adaptar aos horários do técnico ou esperar o 'sobrinho' ter tempo livre no fim de semana.",
+    good: "Atendimento imediato. Você chama, contrata e o técnico já acessa sua máquina para resolver na hora.",
   },
   {
-    title: "2. Prevenção vs. Apagar Incêndios",
-    bad: "Só aparecem e mexem em algo depois que o servidor já caiu ou a rede parou de funcionar.",
-    good: "Monitoramento 24/7. Corrigimos pequenas falhas preventivamente, antes que afetem sua operação.",
+    title: "Conforto e Logística",
+    bad: "Ter que desconectar todos os cabos, colocar o PC no carro e levar até uma assistência técnica física.",
+    good: "100% Remoto. Você não precisa sair da cadeira. Nós consertamos tudo pela internet, de forma segura.",
   },
   {
-    title: "3. Quedas de Internet e Rede",
-    bad: "Se a operadora de internet falha, o escritório inteiro fica sem rede e o trabalho para completamente.",
-    good: "Alta Disponibilidade. Configuramos roteadores com redundância. Se um link cair, o outro assume na hora.",
+    title: "Relação Profissional",
+    bad: "Ficar devendo favores para conhecidos ou ficar sem graça de cobrar se o problema voltar a acontecer.",
+    good: "Relação transparente. Você paga um valor fixo justo, recebe o serviço profissional e tem garantia.",
   },
   {
-    title: "4. Organização e Transparência",
-    bad: "Pedidos soltos pelo WhatsApp do técnico, sem histórico e sem controle das suas licenças.",
-    good: "Gestão Corporativa. Portal de Help Desk, registro de visitas e gestão exata do seu parque tecnológico.",
-  },
-  {
-    title: "5. Nível Técnico da Equipe",
-    bad: "Profissionais juniores ou dependência de um 'faz-tudo' que não domina infraestruturas complexas.",
-    good: "+20 anos de experiência. Equipe sênior especialista em ambientes corporativos e servidores.",
+    title: "Privacidade",
+    bad: "Deixar seu computador dias na loja, correndo risco de ter seus arquivos e fotos pessoais bisbilhotados.",
+    good: "Você acompanha tudo na sua tela. O técnico acessa, resolve e você vê exatamente o que está sendo feito.",
   },
 ];
 
@@ -35,23 +30,23 @@ export const ComparisonSection = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Chega de dores de cabeça com a sua TI.
+            Pare de sofrer com assistências demoradas.
           </h2>
           <p className="text-lg text-gray-600">
-            Veja a diferença entre continuar com um suporte amador e ter a{" "}
+            Veja a diferença entre depender da sorte e ter a{" "}
             <span className="font-semibold text-blue-600">
-              Simples Solução TI
+              Ajuda Ajato
             </span>{" "}
-            como parceira estratégica do seu negócio.
+            resolvendo a sua vida.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Coluna TI Comum */}
+          {/* Coluna Assistência Comum / Favores */}
           <div className="bg-white rounded-2xl shadow-sm border border-red-100 overflow-hidden">
             <div className="bg-red-50 py-6 text-center border-b border-red-100">
               <h3 className="text-xl font-bold text-red-800">
-                ❌ O Suporte de TI Comum
+                ❌ Tentar sozinho ou pedir favor
               </h3>
             </div>
             <div className="p-6 md:p-8 space-y-8">
@@ -71,11 +66,11 @@ export const ComparisonSection = () => {
             </div>
           </div>
 
-          {/* Coluna Simples Solução TI */}
+          {/* Coluna Ajuda Ajato */}
           <div className="bg-white rounded-2xl shadow-xl border-2 border-blue-500 overflow-hidden transform lg:-translate-y-2 transition-transform duration-300">
             <div className="bg-blue-600 py-6 text-center">
               <h3 className="text-xl font-bold text-white">
-                ✅ A Simples Solução TI
+                ✅ Com a Ajuda Ajato
               </h3>
             </div>
             <div className="p-6 md:p-8 space-y-8 bg-blue-50/30">
@@ -96,14 +91,12 @@ export const ComparisonSection = () => {
           </div>
         </div>
 
-        {/* --- INÍCIO DO BOTÃO DE WHATSAPP --- */}
         <div className="mt-16 text-center">
           <WhatsAppButton 
-            buttonText="Quero uma TI Profissional"
-            message="Olá! Vi o comparativo no site da Simples Solução e quero parar de apagar incêndios na TI da minha empresa. Podemos conversar?"
+            buttonText="Quero um Atendimento Profissional"
+            message="Olá! Vi o comparativo no site e quero parar de depender de favores para consertar meu PC. Como funciona a Ajuda Ajato?"
           />
         </div>
-        {/* --- FIM DO BOTÃO DE WHATSAPP --- */}
 
       </div>
     </section>
