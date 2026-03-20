@@ -24,14 +24,14 @@ export const Navbar = () => {
     >
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="relative h-12 w-48">
-          {/* Apontando para a sua logo azul.png */}
+          {/* A imagem muda dinamicamente com base no scroll */}
           <Image
-            src="/azul.png"
+            src={scrolled ? "/azul.webp" : "/branco.webp"}
             alt="Ajuda Ajato - Suporte Técnico Remoto"
             fill
             priority
             sizes="(max-width: 768px) 150px, 200px"
-            className="object-contain object-left"
+            className="object-contain object-left transition-opacity duration-300"
           />
         </div>
       </div>
