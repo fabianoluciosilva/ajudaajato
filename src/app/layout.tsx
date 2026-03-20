@@ -22,103 +22,95 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  applicationName: "Simples Solução TI",
+  applicationName: "Ajuda Ajato",
 
-  // AJUSTE 1: Title atualizado para priorizar "empresa de TI no RJ"
-  title: "Empresa de TI no RJ | Suporte e Terceirização | Simples Solução TI",
+  // Title atualizado para conversão e gatilho de urgência
+  title: "Ajuda Ajato | Suporte Técnico Remoto Rápido e Sem Fidelidade",
 
   description:
-    "Empresa de TI no RJ especializada em suporte técnico, terceirização de TI e gestão com SLA. Atendimento empresarial rápido no Rio de Janeiro.",
+    "Pare de depender de favores. Suporte de TI 100% remoto para seu computador e rede. Atendimento imediato para profissionais em home office em todo o Brasil.",
 
-  // AJUSTE 2: Keywords expandidas com termos que geram cliques nos anúncios
+  // Keywords expandidas para o público avulso e home office
   keywords: [
-    "suporte de TI",
-    "suporte de TI para empresas",
-    "suporte de TI RJ",
-    "empresa de TI no Rio de Janeiro",
-    "empresa de TI RJ",
-    "empresa de TI no RJ",
-    "terceirização de TI",
-    "gestão de TI empresarial",
-    "suporte técnico corporativo",
-    "TI para empresas RJ",
-    "MSP Rio de Janeiro",
-    "manutenção de servidores",
-    "consultoria de TI RJ",
+    "suporte técnico remoto",
+    "consertar pc online",
+    "suporte de TI home office",
+    "técnico de informática online",
+    "ajuda ajato",
+    "manutenção de computador remoto",
+    "pc lento como resolver",
+    "suporte ti sem contrato",
+    "assistência técnica remota",
+    "configurar impressora remoto",
   ],
 
-  authors: [{ name: "Simples Solução TI" }],
-  creator: "Simples Solução TI",
+  authors: [{ name: "Ajuda Ajato" }],
+  creator: "Ajuda Ajato",
 
   robots: {
     index: true,
     follow: true,
   },
 
-  // AJUSTE 4: Canonical URL adicionada
+  // Canonical URL apontando para o domínio oficial
   alternates: {
-    canonical: "https://rj.simplessolucao.com.br/",
+    canonical: "https://www.ajudaajato.com.br/",
   },
 
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://rj.simplessolucao.com.br",
-    siteName: "Simples Solução TI",
-    title: "Empresa de TI no RJ | Suporte e Terceirização | Simples Solução TI",
+    url: "https://www.ajudaajato.com.br",
+    siteName: "Ajuda Ajato",
+    title: "Ajuda Ajato | Suporte Técnico Remoto",
     description:
-      "Empresa de TI no RJ especializada em suporte corporativo, terceirização e gestão de TI com SLA. Atendemos Grande Rio, Niterói e Lagos.",
+      "Problemas no computador? Resolvemos na hora, 100% online. Preço fixo, sem visitas e sem mensalidade.",
     images: [
       {
-        // AJUSTE 3: Uniformizado para .webp (era .jpg aqui e .webp no Twitter)
-        url: "https://rj.simplessolucao.com.br/og-image.webp",
+        // Apontando para a sua logo azul
+        url: "https://www.ajudaajato.com.br/azul.png",
         width: 1200,
         height: 630,
-        alt: "Simples Solução TI - Empresa de TI no Rio de Janeiro",
+        alt: "Ajuda Ajato - Suporte Remoto",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Empresa de TI no RJ | Suporte e Terceirização | Simples Solução TI",
+    title: "Ajuda Ajato | Suporte Remoto Imediato",
     description:
-      "Empresa de TI no RJ com suporte técnico empresarial, terceirização de TI e atendimento com SLA no Rio de Janeiro.",
-    images: ["https://rj.simplessolucao.com.br/og-image.webp"],
+      "Suporte de TI 100% online para profissionais em home office. Resolvemos seu problema agora.",
+    images: ["https://www.ajudaajato.com.br/azul.png"],
   },
 };
 
-// AJUSTE 6: Schema LocalBusiness para relevância local no Google
-const schemaLocalBusiness = {
+// Schema otimizado para serviço de atuação nacional (Brasil)
+const schemaOrganization = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "Simples Solução TI",
+  "@type": "Organization",
+  name: "Ajuda Ajato",
   description:
-    "Empresa de TI no RJ especializada em suporte corporativo, terceirização e gestão de TI com SLA.",
-  url: "https://rj.simplessolucao.com.br",
-  telephone: "+55-21-3529-7993",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Rio de Janeiro",
-    addressRegion: "RJ",
-    addressCountry: "BR",
+    "Suporte técnico de TI 100% remoto para pessoas físicas e profissionais liberais.",
+  url: "https://www.ajudaajato.com.br",
+  logo: "https://www.ajudaajato.com.br/azul.png",
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+55-21-94042-1350",
+    contactType: "customer service",
+    areaServed: "BR",
+    availableLanguage: "Portuguese"
   },
-  areaServed: [
-    "Rio de Janeiro",
-    "Niterói",
-    "Duque de Caxias",
-    "Nova Iguaçu",
-    "Cabo Frio",
-    "Búzios",
-  ],
-  serviceType: [
-    "Suporte de TI",
-    "Terceirização de TI",
-    "Gestão de TI",
-    "Help Desk",
-    "Manutenção de Servidores",
-    "Consultoria de TI",
-  ],
+  makesOffer: [
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Suporte Técnico Remoto",
+        description: "Resolução de lentidão, remoção de vírus e configuração de sistemas remotamente."
+      }
+    }
+  ]
 };
 
 export default function RootLayout({
@@ -128,16 +120,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
-      <head>
-        {/* AJUSTE 5: Meta tags de geolocalização */}
-        <meta name="geo.region" content="BR-RJ" />
-        <meta name="geo.placename" content="Rio de Janeiro" />
-        <meta name="geo.position" content="-22.9068;-43.1729" />
-      </head>
-
       <body
         suppressHydrationWarning
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-50 dark:bg-black min-h-screen min-w-full`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-50 min-h-screen min-w-full text-gray-900`}
       >
         {/* GTM noscript */}
         <noscript>
@@ -149,24 +134,23 @@ export default function RootLayout({
           />
         </noscript>
 
-        {/* AJUSTE 6: Schema LocalBusiness */}
+        {/* Schema de Organização Nacional */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(schemaLocalBusiness),
+            __html: JSON.stringify(schemaOrganization),
           }}
         />
 
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light" // Alterado para light para combinar com a identidade visual da Ajuda Ajato
           enableSystem
           disableTransitionOnChange
         >
           <Suspense>{children}</Suspense>
         </ThemeProvider>
 
-        {/* Componente que gerencia o carregamento de scripts externos */}
         <ThirdPartyScripts />
 
         <Analytics />
