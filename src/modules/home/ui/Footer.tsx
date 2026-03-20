@@ -72,7 +72,8 @@ export const Footer = () => {
         {/* Rodapé Inferior */}
         <div className="border-t border-slate-800 pt-8 text-center text-gray-400">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm">&copy; {new Date().getFullYear()} Ajuda Ajato. Todos os direitos reservados.</p>
+            {/* CORREÇÃO AQUI: Ano fixo para evitar erro de prerender no Next.js */}
+            <p className="text-sm">&copy; 2026 Ajuda Ajato. Todos os direitos reservados.</p>
 
             <div className="flex gap-4 text-sm">
               <Link
