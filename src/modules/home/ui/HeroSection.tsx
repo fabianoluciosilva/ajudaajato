@@ -2,7 +2,6 @@
 
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { ZapIcon, MonitorSmartphone } from "lucide-react";
 import { WhatsAppButton } from "./WhatsAppButton"; // Importando o nosso componente
 
@@ -22,21 +21,8 @@ export const HomeHeroSection = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       <div className="absolute inset-0 z-0">
-        {/* Mantivemos um fundo escuro elegante, combinando com a nova identidade azul */}
-        <div className="absolute inset-0 bg-linear-to-br from-blue-900/95 via-slate-900/90 to-sky-900/95 z-10" />
-
-        <div className="hidden md:block absolute inset-0">
-          {/* Lembre-se de colocar uma imagem de alguém trabalhando feliz em casa no formato webp */}
-          <Image
-            src="/imagem-home-office.webp" 
-            alt="Profissional trabalhando em home office com computador funcionando perfeitamente"
-            fill
-            priority
-            quality={70}
-            sizes="(min-width: 768px) 100vw, 0vw"
-            className="object-cover"
-          />
-        </div>
+        {/* Fundo degradê sólido, sem imagem por trás */}
+        <div className="absolute inset-0 bg-linear-to-br from-blue-900 via-slate-900 to-sky-900 z-10" />
       </div>
 
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
@@ -86,7 +72,7 @@ export const HomeHeroSection = () => {
             href="/#servicos"
           >
             <MonitorSmartphone className="mr-2 h-5 w-5" />
-            Ver Serviços e Valores
+            Ver Serviços
           </Link>
         </div>
         {/* --- FIM DA ÁREA DE BOTÕES --- */}
@@ -115,5 +101,3 @@ export const HomeHeroSection = () => {
     </section>
   );
 };
-
-export default HomeHeroSection;
