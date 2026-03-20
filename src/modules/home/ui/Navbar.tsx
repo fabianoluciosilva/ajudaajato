@@ -18,15 +18,16 @@ export const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-linear-to-br from-blue-900 via-slate-900/95 to-cyan-900 shadow-lg backdrop-blur-sm"
+          ? "bg-white/95 shadow-md backdrop-blur-md"
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-6 py-4">
-        <div className="relative h-10 w-48">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="relative h-12 w-48">
+          {/* Apontando para a sua logo azul.png */}
           <Image
-            src="/simplessolucao-logo.webp"
-            alt="Simples Solução - Consultoria de TI Empresarial"
+            src="/azul.png"
+            alt="Ajuda Ajato - Suporte Técnico Remoto"
             fill
             priority
             sizes="(max-width: 768px) 150px, 200px"
