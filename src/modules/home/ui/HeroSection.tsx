@@ -33,26 +33,26 @@ export const HomeHeroSection = () => {
           </span>
         </div>
 
-        {/* H1 FOCADO NA DOR DO CLIENTE */}
+        {/* H1 UNIVERSAL: Focado no momento da dor, serve para home office, gamer, estudante, etc. */}
         <h1 className="mb-6 text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-          Seu computador parou no meio do <br className="hidden md:block" />
+          Seu computador te deixou na mão <br className="hidden md:block" />
           <span className="bg-linear-to-r from-sky-400 to-blue-400 bg-clip-text text-transparent">
-            expediente de trabalho?
+            bem na hora que você mais precisava?
           </span>
         </h1>
 
-        {/* Parágrafo tocando na ferida: sobrinho, TI da empresa e visitas */}
+        {/* Parágrafo tocando na ferida do "sobrinho" e do YouTube */}
         <p className="text-xl md:text-2xl text-gray-200 mb-10 max-w-4xl mx-auto leading-relaxed">
-          Chega de pedir favores para o sobrinho ou esperar dias pela boa vontade do TI da empresa.{" "}
+          Chega de pedir favores para o "sobrinho do TI" ou perder horas tentando consertar sozinho pelo YouTube.{" "}
           <strong className="text-sky-400">
             Resolvemos seu problema de informática na hora, 100% online.
           </strong>{" "}
-          Sem técnicos estranhos na sua casa e sem pagar mensalidades.
+          Sem técnicos estranhos na sua casa e com orçamento rápido via WhatsApp.
         </p>
 
         {/* BLOCO “SEO-SAFE” - Palavras-chave para o Google Ads */}
         <p className="sr-only">
-          Suporte técnico remoto para home office. Consertar PC online. Assistência técnica de computador à distância. Configuração de rede, impressora e remoção de vírus. Técnico de informática imediato.
+          Suporte técnico remoto de informática. Consertar PC online. Assistência técnica de computador à distância. Configuração de rede, impressora e remoção de vírus. Técnico de informática imediato.
         </p>
 
         {/* --- ÁREA DE BOTÕES DE CONVERSÃO --- */}
@@ -61,11 +61,11 @@ export const HomeHeroSection = () => {
           {/* Botão Primário: Urgência Total */}
           <WhatsAppButton 
             buttonText="Socorro Imediato via WhatsApp"
-            message="Urgente: Olá! Meu computador está com problema e não consigo trabalhar. Preciso de suporte remoto agora!"
+            message="Urgente: Olá! Meu computador me deixou na mão e preciso de suporte remoto agora. Como funciona?"
             className="w-full sm:w-auto text-lg px-8 py-4" 
           />
 
-          {/* Botão Secundário: Redireciona para os preços/serviços */}
+          {/* Botão Secundário: Redireciona para os serviços */}
           <Link
             id="botao-servicos"
             className="flex items-center gap-2 px-8 py-4 text-lg font-bold text-white group rounded-xl transition-all duration-300 border-2 border-white/20 hover:border-sky-400 hover:text-sky-400 shadow-lg hover:shadow-sky-400/20 bg-white/5 backdrop-blur-sm hover:bg-white/10 w-full sm:w-auto justify-center"
