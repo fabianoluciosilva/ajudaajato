@@ -20,7 +20,7 @@ export const WhatsAppButton = ({
   className = "",
 }: Props) => {
   // Número atualizado para a Ajuda Ajato
-  const waNumber = "5521940421350";
+  const waNumber = "552140421350";
   const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
 
   const handleConversion = () => {
